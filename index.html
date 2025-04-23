@@ -16,8 +16,10 @@
 <body>
 
   <!-- Background Video -->
-  <video autoplay loop muted playsinline id="bg-video">
+  <video autoplay muted loop playsinline id="bg-video" poster="fallback.jpg">
   <source src="bg.mp4" type="video/mp4" />
+  <!-- Fallback if video fails -->
+  <img src="fallback.jpg" alt="background image" class="fallback-image" />
 </video>
 
   <!-- Matrix Background -->
