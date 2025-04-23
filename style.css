@@ -8,8 +8,16 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+body {
+    background: url('fallback.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-/* Background Video */
+/* Background video style */
 #bg-video {
     position: fixed;
     top: 0;
@@ -18,8 +26,18 @@ body {
     height: 100vh;
     object-fit: cover;
     z-index: -3;
-    opacity: 1;
     pointer-events: none;
+}
+
+/* If video fails, this image shows up */
+.fallback-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -4;
 }
 
 /* Matrix */
